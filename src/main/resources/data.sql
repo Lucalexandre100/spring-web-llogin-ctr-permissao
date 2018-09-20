@@ -7,6 +7,7 @@ insert into permissao (id, nome) values
 insert into usuario (id, nome, login, senha, ativo) values 
 	(1, 'Carlos', 'carlos', '$2a$10$JvyF9q/k/eYwXTVjc4Ay0OT/dCwjW14eT88q3e587jaENTvtt30s2', true)
 	, (2, 'Flávio', 'flavio', '$2a$10$JvyF9q/k/eYwXTVjc4Ay0OT/dCwjW14eT88q3e587jaENTvtt30s2', true)
+	, (3, 'Lucas', 'lucas', '$2a$10$JvyF9q/k/eYwXTVjc4Ay0OT/dCwjW14eT88q3e587jaENTvtt30s2', true)
 ;
 	
 insert into usuario_permissao (usuario_id, permissao_id) values 
@@ -15,8 +16,10 @@ insert into usuario_permissao (usuario_id, permissao_id) values
 	, (1, 3)
 	, (2, 1)
 	, (2, 2)
+	, (3, 2)
+	, (3, 3)
+	, (3, 1)
 ;
-
 
 
 

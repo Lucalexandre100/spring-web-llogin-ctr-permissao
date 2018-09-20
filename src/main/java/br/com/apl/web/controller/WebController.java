@@ -8,7 +8,7 @@ import org.springframework.web.bind.annotation.RequestMethod;
 public class WebController {
 	
 	@RequestMapping(method = RequestMethod.GET, path = "/entrar")
-    public String entrar() {
+    public String entrar() {	// Escuta a url para abrir a página entrar
         return "entrar";
     }
 	
