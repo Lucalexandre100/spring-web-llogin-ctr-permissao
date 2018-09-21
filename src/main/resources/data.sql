@@ -18,7 +18,6 @@ insert into usuario_permissao (usuario_id, permissao_id) values
 	, (2, 2)
 	, (3, 2)
 	, (3, 3)
-	, (3, 1)
 ;
 
 
