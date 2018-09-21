@@ -9,12 +9,12 @@ public class WebController {
 	
 	@RequestMapping(method = RequestMethod.GET, path = "/entrar")
     public String entrar() {	// Escuta a url para abrir a página entrar
-        return "entrar";
+        return "login";
     }
 	
 	@RequestMapping(method = RequestMethod.GET, path = "/")
     public String inicio() {
-        return "inicio";
+        return "index";
     }
 	
 	@RequestMapping(method = RequestMethod.GET, path = "/projetos")

@@ -24,11 +24,11 @@ public class WebSecurityConfig extends WebSecurityConfigurerAdapter {
 				.authenticated()		                                        //Usuário deve estar autenticado
 			.and()						                                        //Adicionar mais uma configuracao
 			.formLogin()				                                        //Login é realizado por um formulario HTML | caso não tenha uma pag propria o framework abre uma padrão
-				.loginPage("/entrar")	                                        //Página própria de login
+				.loginPage("/login")	                                        //Página própria de login
 				.permitAll()													//Permite acesso a todos
 			.and()
 			.logout()
-				.logoutSuccessUrl("/entrar?logout")
+				.logoutSuccessUrl("/login?logout")
 				.permitAll()
 			.and()
 				.rememberMe()
