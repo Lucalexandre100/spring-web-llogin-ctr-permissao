@@ -31,5 +31,14 @@ public class WebController {
     public String relatorioEquipe() {
         return "relatorio-equipe";
     }
-
+	
+	@RequestMapping(method = RequestMethod.GET, path = "/login")
+    public String login() {	// Escuta a url para abrir a página entrar
+        return "login";
+    }
+	
+	@RequestMapping(method = RequestMethod.GET, path = "/index")
+    public String index() {	// Escuta a url para abrir a página entrar
+        return "index";
+    }
 }
